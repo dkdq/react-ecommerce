@@ -22,19 +22,19 @@ const Navbar = () => {
             top="0"
             left="0"
             zIndex="1"
-            >
+        >
             <Box
                 width="80%"
                 margin="auto"
                 display="flex"
                 justifyContent="space-between"
                 alignItems="center"
-                >
+            >
                 <Box
                     onClick={() => navigate("/")}
                     sx={{ "&:hover": { cursor: "pointer" } }}
                     color={shades.secondary[500]}
-                    >
+                >
                     ECOMMER
                 </Box>
                 <Box
@@ -42,7 +42,7 @@ const Navbar = () => {
                     justifyContent="space-between"
                     columnGap="20px"
                     zIndex="2"
-                    >
+                >
                     <IconButton sx={{ color: "black" }}>
                         <SearchOutlined />
                     </IconButton>
@@ -62,11 +62,11 @@ const Navbar = () => {
                                 minWidth: "13px",
                             },
                         }}
-                        >
+                    >
                         <IconButton
                             onClick={() => dispatch(setIsCartOpen({}))}
                             sx={{ color: "black" }}
-                            >
+                        >
                             <ShoppingBagOutlined />
                         </IconButton>
                     </Badge>

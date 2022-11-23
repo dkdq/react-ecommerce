@@ -35,7 +35,7 @@ const CartMenu = () => {
             left="0"
             top="0"
             overflow="auto"
-            >
+        >
             <Box // MODAL
                 position="fixed"
                 right="0"
@@ -43,7 +43,7 @@ const CartMenu = () => {
                 width="max(400px, 30%)"
                 height="100%"
                 backgroundColor="white"
-                >
+            >
                 <Box padding="30px" overflow="auto" height="100%">
                     {/* HEADER */}
                     <FlexBox mb="15px"> 
@@ -83,7 +83,7 @@ const CartMenu = () => {
                                                 display="flex"
                                                 alignItems="center"
                                                 border={`1.5px solid ${shades.neutral[500]}`}
-                                                >
+                                            >
                                                 <IconButton onClick={() => dispatch(decreaseCount({ id: item.id }))}>
                                                     <RemoveIcon />
                                                 </IconButton>
@@ -122,7 +122,7 @@ const CartMenu = () => {
                                 navigate("/checkout");
                                 dispatch(setIsCartOpen({}));
                             }}
-                            >
+                        >
                             CHECKOUT
                         </Button>
                     </Box>

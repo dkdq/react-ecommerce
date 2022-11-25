@@ -12,7 +12,7 @@ const ShoppingList = () => {
     console.log("items", items);
 
     const handleChange = (event, newValue) => {
-        setValue(newValue)
+        setValue(newValue);
     }
 
     async function getItems() {
